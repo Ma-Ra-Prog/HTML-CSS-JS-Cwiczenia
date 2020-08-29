@@ -1,3 +1,74 @@
 html{
     font-family: 'Cinzel', serif;
 }
+#navigation {
+    background-color: rgb(139, 139, 139);
+    border: 2px outset;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navigation ul {
+    display: flex;
+    list-style: none;
+}
+
+#navigation ul li {
+    padding: 12px 10px;
+    font-size: 22px;
+}
+
+#navigation ul li a {
+    text-decoration: none;
+    color: black;
+    background-color: lightgray;
+    padding: 8px;
+    border: 4px outset;
+    border-radius: 4px;
+    transition: .5s all;
+}
+
+#navigation ul li a:hover {
+    background-color: rgb(170, 170, 170);
+}
+
+#navigation ul li a:active{
+    border: inset;
+}
+
+main{
+    display: flex;
+}
+
+.article{
+    width: 33%;
+    border: 2px inset dimgray;
+    background-color: lightgray;
+    margin: 2px;
+    padding: 12px 20px;
+    position: relative;
+}
+
+.article::before{
+    content: "To jest mój tooltip";
+    position: absolute;
+    visibility: hidden;
+    
+    background-color: dimgrey;
+    color: whitesmoke;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.article:hover.article::before{
+    visibility: visible;
+    color: red;
+}
+
+.article h3{
+    text-align: center;
+    color: darkred;
+}
+
