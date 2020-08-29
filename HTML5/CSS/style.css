@@ -72,3 +72,22 @@ main{
     color: darkred;
 }
 
+#contactForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactForm label {
+    width: 500px;
+}
+
+#contactForm label span {
+    min-width: 100px;
+    display: inline-block;
+}
+
+#foot p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
